@@ -22,7 +22,7 @@ jobs:
         run: npm install --legacy-peer-deps --frozen-lockfile ; npm i react-scripts@latest
 
       - name: Build # React Build
-        run: yarn add react-router-dom ; yarn build
+        run: yarn add react-router-dom ; npm install --save reactstrap ; yarn build
         env:
           CI: ""
 
